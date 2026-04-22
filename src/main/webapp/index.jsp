@@ -1,5 +1,183 @@
 <!doctype html>
 <html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>NexusShop — Premium UI</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+:root{
+--primary:#111827;
+--accent:#6366f1;
+--bg:#f9fafb;
+--card:#ffffff;
+--radius:16px;
+}
+
+body{
+margin:0;
+font-family:Poppins,sans-serif;
+background:var(--bg);
+color:var(--primary);
+}
+
+.container{max-width:1200px;margin:auto;padding:20px}
+
+/* HEADER */
+header{
+background:white;
+padding:15px 0;
+box-shadow:0 4px 20px rgba(0,0,0,0.05);
+position:sticky;top:0;z-index:10;
+}
+.header{
+display:flex;justify-content:space-between;align-items:center;
+}
+.logo{font-weight:700;font-size:22px;color:var(--accent)}
+
+nav a{
+margin:0 12px;
+text-decoration:none;
+color:#555;
+font-weight:500;
+}
+nav a:hover{color:var(--accent)}
+
+/* HERO */
+.hero{
+background:linear-gradient(135deg,#6366f1,#9333ea);
+color:white;
+padding:80px 20px;
+text-align:center;
+border-radius:0 0 30px 30px;
+}
+.hero h1{font-size:42px;margin-bottom:10px}
+.hero p{opacity:.9;margin-bottom:20px}
+
+.btn{
+padding:12px 22px;
+border:none;
+border-radius:999px;
+cursor:pointer;
+font-weight:600;
+}
+.btn-primary{background:white;color:#6366f1}
+
+/* GRID */
+.grid{
+display:grid;gap:20px;margin-top:30px}
+.products{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+
+/* CARD */
+.card{
+background:var(--card);
+padding:15px;
+border-radius:var(--radius);
+box-shadow:0 10px 30px rgba(0,0,0,0.05);
+transition:.3s;
+}
+.card:hover{
+transform:translateY(-5px);
+box-shadow:0 20px 40px rgba(0,0,0,0.1);
+}
+
+.card img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:12px;
+}
+
+.card h4{margin:10px 0}
+.price{font-weight:700;color:var(--accent)}
+
+.add{
+margin-top:10px;
+width:100%;
+background:var(--accent);
+color:white;
+padding:10px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:30px;
+margin-top:40px;
+color:#777;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container header">
+<div class="logo">NexusShop</div>
+<nav>
+<a href="#">Home</a>
+<a href="#">Products</a>
+<a href="#">Deals</a>
+<a href="#">Contact</a>
+</nav>
+</div>
+</header>
+
+<section class="hero">
+<h1>Upgrade Your Style</h1>
+<p>Discover premium products with modern design</p>
+<button class="btn btn-primary">Shop Now</button>
+</section>
+
+<div class="container">
+<h2>Trending Products</h2>
+<div class="grid products">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb" />
+<h4>iPhone 14</h4>
+<div class="price">$999</div>
+<button class="add">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1593642632823" />
+<h4>MacBook Pro</h4>
+<div class="price">$1999</div>
+<button class="add">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1529374255404" />
+<h4>Smart Watch</h4>
+<div class="price">$399</div>
+<button class="add">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1542272604" />
+<h4>Nike Shoes</h4>
+<div class="price">$150</div>
+<button class="add">Add to Cart</button>
+</div>
+
+</div>
+</div>
+
+<footer>
+© 2026 NexusShop. Designed beautifully ✨
+</footer>
+
+</body>
+</html>
+<!doctype html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8" />
